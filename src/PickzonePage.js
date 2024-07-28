@@ -8,7 +8,7 @@ const PickzonePage = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/inventory')
+    axios.get('https://putting-app.onrender.com/api/inventory')
       .then(response => {
         const pickzoneSet = new Set();
         response.data.forEach(item => {
