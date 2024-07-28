@@ -10,7 +10,7 @@ const RackPage = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/inventory')
+    axios.get('https://putting-app.onrender.com/api/inventory')
       .then(response => {
         const rackData = response.data
           .filter(item => item.id.includes(pickzone) && item.id.includes(aisle))
