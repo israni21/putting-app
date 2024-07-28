@@ -53,7 +53,7 @@ const AislePage = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-8 sm:p-8 lg:p-12">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-0 sm:p-8 lg:p-12">
       <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-4xl">
         <h2 className="text-2xl font-mulish sm:text-3xl font-bold text-gray-800 mb-6 text-center">Select Aisle</h2>
         <div className="mb-6 flex flex-col items-center">
@@ -64,7 +64,7 @@ const AislePage = () => {
           >
             <option value="" disabled>Select Aisle</option>
             {aisles.map(({ aisle }) => (
-              <option key={aisle} value={aisle}>{aisle}</option>
+              <option key={aisle} value={aisle}>Aisle {aisle}</option>
             ))}
           </select>
         </div>
@@ -76,7 +76,7 @@ const AislePage = () => {
               onClick={() => handleAisleClick(aisle)}
             >
               <h3 className="text-lg font-mulish sm:text-xl font-semibold text-gray-800">{aisle}</h3>
-              <p className="text-gray-600">Availability: <span className="font-semibold text-gray-900">{totalSpaces}</span></p>
+              <p className="text-gray-600">Available: <span className="font-semibold text-gray-900">{totalSpaces}</span></p>
             </div>
           ))}
         </div>
