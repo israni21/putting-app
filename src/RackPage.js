@@ -76,7 +76,7 @@ const RackPage = () => {
               className={`p-4 font-mulish bg-white border rounded-lg shadow-md hover:bg-gray-50 cursor-pointer transition-all duration-300 ease-in-out ${selectedRack === id ? 'bg-blue-100 border-blue-500' : 'border-gray-300'}`}
               onClick={() => handleRackClick(id)}
             >
-              <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-2">{id.split('-')[3]}</h3>
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-800">{id.split('-')[3]}</h3>
               <p className="text-gray-600">Available: <span className="font-semibold text-gray-900">{spacesAvailable}</span></p>
             </div>
           ))}
