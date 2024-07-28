@@ -9,7 +9,7 @@ const AislePage = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/inventory')
+    axios.get('https://putting-app.onrender.com/api/inventory')
       .then(response => {
         console.log('Inventory data:', response.data);
         const aisleData = response.data
