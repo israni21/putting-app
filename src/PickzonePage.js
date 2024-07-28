@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 const PickzonePage = () => {
   const [pickzones, setPickzones] = useState([]);
@@ -55,6 +55,8 @@ const PickzonePage = () => {
           Next
         </button>
       </div>
+      <Link to="/" className="border-b-2 flex items-center hover:bg-gray-50 transition duration-300 ease-in-out transform hover:scale-105 relative">
+            Log Out </Link>
     </div>
   );
 };
