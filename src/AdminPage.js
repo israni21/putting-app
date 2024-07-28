@@ -69,7 +69,7 @@ const AdminPage = () => {
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6 sm:p-8 lg:p-12">
       <div className="w-full max-w-4xl bg-white p-6 rounded-lg shadow-lg">
         <div className="flex justify-between items-center mb-4">
-          <h1 className="text-2xl font-bold text-gray-800 font-mulish">Admin</h1>
+          <h1 className="text-2xl font-bold text-gray-800 font-mulish">G1 Locations</h1>
           <div className="flex items-center">
             <input type="file" id="fileUpload" className="hidden" onChange={handleFileChange} />
             <label htmlFor="fileUpload" className="cursor-pointer">
@@ -96,9 +96,9 @@ const AdminPage = () => {
           <table className="w-full border-collapse bg-white">
             <thead>
               <tr className="bg-gray-200">
-                <th className="p-3 text-left font-mulish border-b border-gray-300">Location ID</th>
+                <th className="p-3 text-left text-sm sm:text-base font-mulish border-b border-gray-300">Location ID</th>
                 <th
-                  className="p-3 text-left font-mulish border-b border-gray-300 cursor-pointer"
+                  className="p-3 text-right font-mulish border-b border-gray-300 cursor-pointer"
                   onClick={handleSort}
                 >
                   Spaces Available
@@ -110,7 +110,7 @@ const AdminPage = () => {
               {filteredLocations.map(location => (
                 <tr key={location.id} className="hover:bg-gray-100 transition-colors duration-200">
                   <td className="p-3 border-b border-gray-300">{location.id}</td>
-                  <td className="p-3 border-b border-gray-300">{location.spacesAvailable}</td>
+                  <td className="p-3 text-right border-b border-gray-300">{location.spacesAvailable}</td>
                 </tr>
               ))}
             </tbody>
