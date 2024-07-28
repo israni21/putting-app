@@ -6,7 +6,7 @@ const InventoryList = () => {
   const [inventory, setInventory] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/inventory')
+    axios.get('https://putting-app.onrender.com/api/inventory')
       .then(response => {
         setInventory(response.data);
       })
