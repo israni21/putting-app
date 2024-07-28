@@ -75,7 +75,7 @@ const AislePage = () => {
               className={`p-4 font-mulish bg-white border rounded-lg shadow-md hover:bg-gray-100 cursor-pointer transition-all duration-100 ease-in-out ${selectedAisle === aisle ? 'bg-blue-100 border-blue-500' : 'border-gray-300'}`}
               onClick={() => handleAisleClick(aisle)}
             >
-              <h3 className="text-lg font-mulish sm:text-xl font-semibold text-gray-800">Aisle {aisle}</h3>
+              <h3 className="text-lg font-mulish sm:text-xl font-semibold text-gray-800">{aisle}</h3>
               <p className="text-gray-600">Availability: <span className="font-semibold text-gray-900">{totalSpaces}</span></p>
             </div>
           ))}
