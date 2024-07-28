@@ -57,8 +57,8 @@ const PickzonePage = () => {
         </button>
       </div>
       <div className="flex items-center justify-center lg:mt-3 mt-2">
-        <FaChevronLeft className="text-gray-300 sm:mt-0 tracking-wide p-0.5 sm:p-0" />
-        <Link to="/" className="text-gray-300 text-center ml-2 border-b-2 sm:text-base text-xs transition duration-300 ease-in-out transform hover:scale-105 relative">Home</Link>
+        <FaChevronLeft className="text-gray-300 font-mulish sm:mt-0 tracking-wide p-0.5 sm:p-0" />
+        <Link to="/" className="text-gray-300 font-mulish text-center ml-2 border-b-2 sm:text-base text-xs transition duration-300 ease-in-out transform hover:scale-105 relative">Home</Link>
       </div>
     </div>
   );
