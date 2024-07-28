@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate, Link } from 'react-router-dom';
+import { FaChevronLeft } from "react-icons/fa";
 
 const PickzonePage = () => {
   const [pickzones, setPickzones] = useState([]);
@@ -55,8 +56,10 @@ const PickzonePage = () => {
           Next
         </button>
       </div>
-      <Link to="/" className="border-b-2 flex items-center hover:bg-gray-50 transition duration-300 ease-in-out transform hover:scale-105 relative">
-            Log Out </Link>
+      <div className="flex items-center justify-center lg:mt-3 mt-2">
+        <FaChevronLeft className="text-gray-300 sm:mt-0 tracking-wide p-0.5 sm:p-0" />
+        <Link to="/" className="text-gray-300 text-center ml-2 border-b-2 sm:text-base text-xs transition duration-300 ease-in-out transform hover:scale-105 relative">Home</Link>
+      </div>
     </div>
   );
 };
