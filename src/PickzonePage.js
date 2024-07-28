@@ -37,7 +37,7 @@ const PickzonePage = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-gray-100 p-8 lg:p-12">
       <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
-        <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center font-mulish">Select Pickzone</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-6 text-center font-mulish">Select Pickzone</h2>
         <select
           value={pickzone}
           onChange={handlePickzoneChange}

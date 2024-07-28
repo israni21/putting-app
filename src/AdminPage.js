@@ -89,7 +89,7 @@ const AdminPage = () => {
             value={searchTerm}
             onChange={handleSearch}
             placeholder="Search by Location ID"
-            className="w-full p-2 font-mulish border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700"
+            className="w-full text-sm sm:text-base p-2 font-mulish border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700"
           />
         </div>
         <div className="overflow-y-auto" style={{ maxHeight: '400px' }}>
@@ -98,7 +98,7 @@ const AdminPage = () => {
               <tr className="bg-gray-200">
                 <th className="p-3 text-left text-sm sm:text-base font-mulish border-b border-gray-300">Location ID</th>
                 <th
-                  className="p-3 text-right font-mulish border-b border-gray-300 cursor-pointer"
+                  className="p-3 text-right text-sm sm:text-base font-mulish border-b border-gray-300 cursor-pointer"
                   onClick={handleSort}
                 >
                   Spaces Available
