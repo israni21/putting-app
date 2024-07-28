@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { FaUpload, FaSortUp, FaSortDown } from 'react-icons/fa';
+import { FaChevronLeft } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const AdminPage = () => {
   const [locations, setLocations] = useState([]);
@@ -66,7 +68,7 @@ const AdminPage = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6 sm:p-8 lg:p-12">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 sm:p-8 lg:p-12">
       <div className="w-full max-w-4xl bg-white p-6 rounded-lg shadow-lg">
         <div className="flex justify-between items-center mb-4">
           <h1 className="text-lg sm:text-2xl font-bold text-gray-800 font-mulish">G1 Locations</h1>
@@ -116,6 +118,10 @@ const AdminPage = () => {
             </tbody>
           </table>
         </div>
+      </div>
+      <div className="flex items-center justify-center lg:mt-3 mt-2">
+        <FaChevronLeft className="text-gray-400 font-mulish sm:mt-0 tracking-wide p-0.5 sm:p-0" />
+        <Link to="/" className="text-gray-400 font-mulish text-center ml-2 border-b-2 sm:text-base text-xs transition duration-300 ease-in-out transform hover:scale-105 relative">Home</Link>
       </div>
     </div>
   );
