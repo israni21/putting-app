@@ -10,7 +10,7 @@ const AdminPage = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/inventory')
+    axios.get('https://putting-app.onrender.com/api/inventory')
       .then(response => {
         if (Array.isArray(response.data)) {
           setLocations(response.data);
@@ -32,7 +32,7 @@ const AdminPage = () => {
     const formData = new FormData();
     formData.append('file', file);
 
-    axios.post('http://localhost:5000/upload', formData)
+    axios.post('https://putting-app.onrender.com/upload', formData)
       .then(response => {
         if (Array.isArray(response.data)) {
           alert('File uploaded successfully');
