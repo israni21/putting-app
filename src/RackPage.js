@@ -38,7 +38,7 @@ const RackPage = () => {
     if (selectedRack) {
       alert(`Final Location: ${selectedLocation}`);
       // Update space availability (decrement space count)
-      axios.patch(`http://localhost:5000/api/inventory/${selectedRack}`, { spacesAvailable: -1 })
+      axios.patch(`https://putting-app.onrender.com/api/inventory/${selectedRack}`, { spacesAvailable: -1 })
         .then(response => {
           console.log('Updated Data:', response.data);
           navigate('/select-pickzone'); // Redirect to a confirmation or other page
